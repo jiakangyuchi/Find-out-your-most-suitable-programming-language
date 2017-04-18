@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>language-test</title>
+		<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script> -->
+<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/language.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/three.min.js"></script>
+	<script src="js/three.min.js"></script>
+	</head>
+	<body>
+    <div class="wraper">
+    <div class="one">
+    <p>
+    Enjoyment is very important when programming
+    </p>
+    <button class="agree_one" onclick="one()">Agree</button>
+    </div>
+    <div class="two">
+    <p>
+    I am interested in Web development
+	</p>
+	<button class="agree_two" onclick="two()">Agree</button>
+    </div>
+    <div class="three">
+    <p>
+    I am a beginner
+    </p>
+    <button class="agree_three" onclick="three()">Agree</button>
+    </div>
+    <div class="four">
+    <p>
+    A language should have strict syntax and clear structure.
+    </p>
+    <button class="agree_four" onclick="four()">Agree</button>
+    </div>
+    <div class="five">
+    <p>
+    I prefer powerful language even if it's very complicate
+    </p>
+    <button class="agree_five" onclick="five()">Agree</button>
+    </div>
+    <div class="six">
+    <p>
+    I like math and data analysis
+    </p>
+    <button class="agree_six" onclick="six()">Agree</button>
+    </div>
+    <div class="seven">
+    <p>
+    Hackers are cool, I wanna join
+    </p>
+    <button class="agree_seven" onclick="seven()">Agree</button>
+    </div>
+    <div class="eight">
+    <p>
+    The author is a sweet gentleman
+    </p>
+    <button class="agree_eight" onclick="eight()">Agree</button>
+    <button class="submit" onclick="submit()" style="display:none;">Done</button>
+    </div>
+    </div>
+
+
+    <img src="css/cc_tr.png" class="cc">
+    <img src="css/c_tr.png" class="c">
+    <img src="css/c++_tr.png" class="ccc">
+    <img src="css/java_tr.png" class="java">
+    <img src="css/javascript_tr.png" class="javascript">
+    <img src="css/perl_tr.png" class="perl">
+    <img src="css/php_tr.png" class="php">
+    <img src="css/python_tr.png" class="python">
+    <img src="css/r_tr.png" class="r">
+    <img src="css/ruby_tr.png" class="ruby">
+    <img src="css/scala_tr.png" class="scala">
+    <img src="css/shell_tr.png" class="shell">
+
+    
+<script>
+    var cc = $('.cc');
+    var c = $('.c');
+    var ccc = $('.ccc');
+    var java = $('.java');
+    var javascript = $('.javascript');
+    var perl = $('.perl');
+    var php = $('.php');
+    var python = $('.python');
+    var r = $('.r');
+    var ruby = $('.ruby');
+    var scala = $('.scala');
+    var shell = $('.shell');
+
+    var cc_rank = 0;
+    var c_rank = 0;
+    var ccc_rank = 0;
+    var java_rank = 0;
+    var javascript_rank = 0;
+    var perl_rank = 0;
+    var php_rank = 0;
+    var python_rank = 0;
+    var r_rank = 0;
+    var ruby_rank = 0;
+    var scala_rank = 0;
+    var shell_rank = 0;
+
+    var ranks = [];
+
+ function one(){
+    $(".agree_one").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    ruby_rank = ruby_rank + 2;
+    javascript_rank++;
+    python_rank++;
+    perl_rank++;
+  };
+
+ function two(){
+    $(".agree_two").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    ruby_rank++;
+    java_rank++;
+    javascript_rank = javascript_rank + 4;
+    python_rank = python_rank + 2;
+    php_rank = php_rank + 2;
+    cc_rank++;
+  };
+
+ function three(){
+    $(".agree_three").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    ruby_rank++;
+    c_rank = python_rank + 2;
+    python_rank = python_rank + 3;
+    php_rank++;
+    perl_rank = perl_rank - 10;
+    r_rank = r_rank - 10;
+    scala_rank = r_rank - 10;
+    ccc_rank = ccc_rank - 10;
+    javascript_rank = javascript_rank - 10;
+    java_rank = java_rank - 10;
+    cc_rank = cc_rank - 10;
+  };
+
+ function four(){
+    $(".agree_four").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    java_rank++;
+    javascript_rank = python_rank + 2;
+    python_rank = python_rank + 2;
+    scala_rank++;
+    perl_rank = perl_rank - 10;
+    ruby_rank = ruby_rank - 10;
+    php_rank = php_rank - 10;
+    c_rank = c_rank - 10;
+    ccc_rank = ccc_rank - 10;
+          
+  };
+   function five(){
+    $(".agree_five").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    scala_rank = scala_rank + 3;
+    javascript_rank = javascript_rank + 2;
+    ccc_rank = ccc_rank + 4;
+    java_rank++;
+    r_rank = r_rank + 3;
+    perl_rank = perl_rank + 3;
+  };
+   function six(){
+    $(".agree_six").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    r_rank = r_rank + 3;
+    scala_rank++;
+    java_rank++;
+  };
+   function seven(){
+    $(".agree_seven").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    });
+    python_rank = shell_rank + 2;
+    javascript_rank++;
+    shell_rank = shell_rank + 3;
+  };
+     function eight(){
+    $(".agree_eight").css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    }); 
+    $(".submit").delay("100").fadeIn();
+  };
+
+function submit(){
+    var one = $('.one');
+    var two = $('.two');
+    var three = $('.three');
+    var four = $('.four');
+    var five = $('.five');
+    var six = $('.six');
+    var seven = $('.seven');
+    var eight = $('.eight');
+    ranks.push(python_rank,
+               cc_rank,
+               c_rank,
+               ccc_rank,
+               java_rank,
+               javascript_rank,
+               perl_rank,
+               php_rank,
+               r_rank,
+               ruby_rank,
+               scala_rank,
+               shell_rank);
+
+    var max = Math.max(...ranks);
+
+
+    one.animate({
+    left:"763px",
+    }, 3000, "linear", function(){
+        one.animate({
+            left:"381px",
+            top:"127.5px",
+        }, 500,function(){
+            one.animate({
+                opacity:0,
+            })
+        })
+    });
+
+    two.delay(1000).animate({
+        opacity:0,
+    }, 1);
+
+    three.delay(2000).animate({
+        opacity:0,
+    }, 1);
+
+    four.delay(3000).animate({
+        opacity:0,
+    }, 1);
+
+    eight.animate({
+    right:"763px",
+    }, 3000, "linear", function(){
+        eight.animate({
+            right:"381px",
+            bottom:"127.5px",
+        }, 500, animate(),function(){
+            eight.animate({
+                opacity:0,
+            },1000,function(){ 
+            console.log(max);
+            console.log(ranks[0]);           
+                if(max == ranks[0]){
+                python.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[1]){
+                cc.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[2]){
+                c.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[3]){
+                ccc.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[4]){
+                java.animate({
+                    opacity:1,
+                });}                
+                else if(max == ranks[5]){
+                javascript.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[6]){
+                perl.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[7]){
+                php.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[8]){
+                r.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[9]){
+                ruby.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[10]){
+                scala.animate({
+                    opacity:1,
+                });}
+                else if(max == ranks[11]){
+                shell.animate({
+                    opacity:1,
+                });}                
+            })
+        })
+    });
+
+    seven.delay(1000).animate({
+        opacity:0,
+    }, 1);
+
+    six.delay(2000).animate({
+        opacity:0,
+    }, 1);
+
+    five.delay(3000).animate({
+        opacity:0,
+    }, 1);
+
+
+    $('.submit').css({
+      'transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      '-webkit-transform':'translateX(-500px) translateY(-400px) rotate(-360deg)',
+      'opacity':'0',
+      'transition': 'all 1s',
+    })
+}
+
+
+
+var scene, camera, renderer;
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight);
+    camera.position.set(0,0,3);
+    camera.lookAt(new THREE.Vector3(0,0,0));
+    scene.add(camera);
+
+
+    var material = new THREE.PointsMaterial({color: '#5dade2', size: .1});
+    function pointsGenerator(num) {
+        var geometry = new THREE.Geometry();
+        for (var i = 0;i < num; i++) {
+            var pX = Math.random() * 5 - 2.5;
+            var pY = Math.random() * 3 - 1.5;
+            var pZ = Math.random() * 4 - 2;
+            var particle = new THREE.Vector3(pX, pY, pZ);
+            geometry.vertices.push(particle);
+        }
+        return new THREE.Points(geometry, material);
+    }
+
+    var rain = pointsGenerator(100);
+    rain.position.set(0,0,0);
+    scene.add(rain);
+
+    var additionRain = pointsGenerator(100);
+    additionRain.position.set(0,3,0);
+    scene.add(additionRain);
+
+    
+
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    
+    
+    function animate() {
+        
+        rain.position.y -= 0.07;
+        if (rain.position.y <= - 3) {
+            scene.remove(rain);
+            rain = pointsGenerator(100);
+            rain.position.set(0,3,0);
+            scene.add(rain);
+        }
+
+        additionRain.position.y -= 0.07;
+        if (additionRain.position.y <= - 3) {
+            scene.remove(additionRain);
+            additionRain = pointsGenerator(100);
+            additionRain.position.set(0,3,0);
+            scene.add(additionRain);
+        }
+        
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+
+
+		</script> 
+	</body>
+</html>
