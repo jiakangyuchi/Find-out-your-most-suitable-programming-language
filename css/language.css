@@ -1,0 +1,347 @@
+@-webkit-keyframes fadein{
+	0%{opacity:0;}
+    40%{opacity:0;}
+    100%{opacity: 1;}
+}
+@keyframes fadein{
+	0%{opacity:0;}
+    40%{opacity:0;}
+    100%{opacity: 1;}
+}
+
+body{
+/*	background: url(egg_shell.png)  repeat top left;*/
+/*    animation:fadein;
+    animation-duration: 2s;
+	-webkit-animation:fadein 2s;*/
+    overflow: auto;
+    background-color: #d6eaf8;
+
+}
+canvas{
+/*    position:absolute;
+    z-index: 20;
+
+ margin-bottom: -800px;*/
+ position: absolute;
+ top:0;
+z-index: 1;
+
+
+}
+
+.inputname{
+    width:200px;
+margin:auto;
+}
+
+*{
+      font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-weight: 300;
+}
+
+.wraper{
+    margin:100px auto;
+    width:1013px;
+    height:auto;
+    font-family:sans-serif;
+    position: relative;
+    background-color: #d6eaf8;
+}
+
+@media(max-width:1050px)
+{
+    .wraper{
+        width:760px;
+    }
+}
+
+@media(max-width:760px)
+{
+    .wraper{
+        width:520px;
+    }
+}
+@media(max-width:520px)
+{
+    .wraper{
+        width:250px;
+    }
+}
+.wraper div{
+border:none;
+border-radius: 50%;
+display: inline-block;
+width:250px;
+height:250px;
+text-align: center;
+vertical-align: bottom;
+padding-top:100px;
+}
+
+div.one{
+    background-color:#f5b7b1;
+    position: relative;
+    z-index: 3;
+}
+div.two{
+    background-color:#d2b4de;
+    position: relative;
+    z-index: 2;
+}
+div.three{
+    background-color:#aed6f1;
+    position: relative;
+    z-index: 2;
+}
+div.four{
+    background-color:#a2d9ce;
+    position: relative;
+    z-index: 2;    
+}
+div.five{
+    background-color:#82e0aa;
+    position: relative;
+    z-index: 2;    
+}
+div.six{
+    background-color:#fad7a0;
+    position: relative;
+    z-index: 2;    
+}
+div.seven{
+    background-color:#edbb99;
+    position: relative;
+    z-index: 2;    
+}
+div.eight{
+    background-color:#f5b7b1;
+    position: relative;
+    z-index: 4;
+}
+
+img.cc{
+    opacity: 0;
+    width: 202px;  
+    height: 356px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111px; /* (width + padding)/2 */  
+    margin-top: -188px; /* (height + padding)/2 */ 
+}
+img.c{
+    opacity: 0;
+    width: 203px;  
+    height: 401px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111.5px; /* (width + padding)/2 */  
+    margin-top: -210px; /* (height + padding)/2 */ 
+}
+img.ccc{
+    opacity: 0;
+    width: 203px;  
+    height: 277px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111.5px; /* (width + padding)/2 */  
+    margin-top: -148px; /* (height + padding)/2 */ 
+}
+img.java{
+    opacity: 0;
+    width: 205px;  
+    height: 324px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -112px; /* (width + padding)/2 */  
+    margin-top: -172px; /* (height + padding)/2 */ 
+}
+img.javascript{
+    opacity: 0;
+    width: 201px;  
+    height: 282px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -110.5px; /* (width + padding)/2 */  
+    margin-top: -151px; /* (height + padding)/2 */ 
+}
+img.perl{
+    opacity: 0;
+    width: 205px;  
+    height: 367px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -112.5px; /* (width + padding)/2 */  
+    margin-top: -193px; /* (height + padding)/2 */ 
+}
+img.php{
+    opacity: 0;
+    width: 201px;  
+    height: 282px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -110.5px; /* (width + padding)/2 */  
+    margin-top: -151px; /* (height + padding)/2 */ 
+}
+img.python{
+    opacity: 0;
+    width: 201px;  
+    height: 282px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -110.5px; /* (width + padding)/2 */  
+    margin-top: -151px; /* (height + padding)/2 */ 
+}
+img.r{
+    opacity: 0;
+    width: 203px;  
+    height: 363px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111.5px; /* (width + padding)/2 */  
+    margin-top: -191.5px; /* (height + padding)/2 */ 
+}
+img.ruby{
+    opacity: 0;
+    width: 203px;  
+    height: 321px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111.5px; /* (width + padding)/2 */  
+    margin-top: -170.5px; /* (height + padding)/2 */ 
+}
+img.scala{
+    opacity: 0;
+    width: 204px;  
+    height: 341px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -112px; /* (width + padding)/2 */  
+    margin-top: -180.5px; /* (height + padding)/2 */ 
+}
+img.shell{
+    opacity: 0;
+    width: 203px;  
+    height: 303px;  
+    padding: 20px;  
+    position: absolute;  
+    z-index: 4;
+    top: 50%; left: 50%;  
+    margin-left: -111.5px; /* (width + padding)/2 */  
+    margin-top: -161.5px; /* (height + padding)/2 */ 
+}
+button:hover, button:visited, button:focus, button:active{
+text-decoration:none;
+outline: none;
+}
+p{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 700;
+}
+.one p{
+    color:#fdedec;
+}
+.two p{
+    color:#f4ecf7;
+}
+.three p{
+    color:#ebf5fb;
+}
+.four p{
+    color:#e8f6f3;
+}
+.five p{
+    color:#eafaf1;
+}
+.six p{
+    color:#fef5e7;
+}
+.seven p{
+    color:#fbeee6;
+}
+.eight p{
+    color:#fdedec;
+}
+button{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    border-radius: 50%;
+    border:none;
+    font-weight: 500;
+}
+.one button{
+    background-color: #fadbd8;
+    color:#f1948a;
+}
+.two button{
+    background-color: #e8daef;
+    color:#bb8fce;
+}
+.three button{
+    background-color: #d6eaf8;
+    color:#85c1e9;
+}
+.four button{
+    background-color: #d0ece7;
+    color:#73c6b6;
+}
+.five button{
+    background-color: #d5f5e3;
+    color:#82e0aa;
+}
+.six button{
+    background-color: #fdebd0;
+    color:#f8c471;    
+}
+.seven button{
+    background-color: #f6ddcc;
+    color:#e59866;
+}
+button.agree_eight{
+    background-color: #fadbd8;
+    color:#f1948a;
+}
+button.submit{
+    background-color: #fadbd8;
+    color:#f1948a;
+    right:27px;
+
+}
+
+
+
+/*button:focus{
+    transform: translateX(-300px) translateY(-300px) rotate(-90deg);
+    opacity: 0;
+    transition: all 2s;
+}*/
+
+
